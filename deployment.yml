@@ -3,7 +3,6 @@ kind: Deployment
 
 metadata:
   name: myapp
-  namespace: unnati
 
 spec:
   replicas: 1
