@@ -1,4 +1,4 @@
-```yaml
+```yaml id="kwukf0"
 apiVersion: apps/v1
 kind: Deployment
 
@@ -19,12 +19,13 @@ spec:
 
     spec:
       containers:
-      - name: myapp
-        image: sayaliiiii/webapp:img2
-        imagePullPolicy: Always
+        - name: myapp
+          image: sayaliiiii/webapp:img2
+          imagePullPolicy: Always
 
-        ports:
-        - containerPort: 80
+          ports:
+            - containerPort: 80
+
 ---
 apiVersion: v1
 kind: Service
@@ -44,3 +45,4 @@ spec:
       targetPort: 80
       nodePort: 30007
 ```
+
