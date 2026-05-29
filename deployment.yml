@@ -3,6 +3,7 @@ kind: Deployment
 
 metadata:
   name: myapp
+  namespace: unnati
 
 spec:
   replicas: 1
@@ -19,6 +20,6 @@ spec:
     spec:
       containers:
       - name: mycontainer
-        image: sayaliiiii/myimage:latest
+        image: httpd
         ports:
         - containerPort: 80
